@@ -41,6 +41,9 @@ require_once("session_check.php");
 </head>
 
 <body class="">
+    <div class="alert alert-warning text-center mb-0 text-uppercase" role="alert">
+        Please Note: This application is a working prototype and not the actual evaluation portal. Dummy profiles have been set up and credentials are automatically filled in for the user conveinience.
+    </div>
     <div class="page">
         <div class="page-content">
             <div class="container text-center">
@@ -58,7 +61,8 @@ require_once("session_check.php");
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mt-3 mt-lg-0 text-center">
-                    Copyright © <?php echo date("Y"); ?> <a href="https://prismcode.in">PrismCode Info Solutions Pvt Ltd</a>. All rights reserved.
+                    Online Evaluation System © <?php echo date("Y"); ?> <a href="https://prismcode.in">PrismCode Info Solutions Pvt Ltd</a>. All rights reserved. <br>
+                    Developed by <a href="http://www.linkedin.com/in/apreshagarwal">Apresh Agarwal</a> on March 12, 2020.
                 </div>
             </div>
         </div>
