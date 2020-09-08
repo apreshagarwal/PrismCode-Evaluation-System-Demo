@@ -152,7 +152,7 @@ $conn->close();
                   <label class="form-label">Select Course</label>
                   <select name="quiz_id" class="form-control custom-select" required>
                     <option value="" disabled>-- Select --</option>
-                    <option value="1" selected>Python (Demo)</option>
+                    <option value="1" selected>PHP (Demo)</option>
                   </select>
                 </div>
                 <div class="form-group">
