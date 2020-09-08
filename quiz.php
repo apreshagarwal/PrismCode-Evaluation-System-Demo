@@ -25,7 +25,11 @@ if (!$_SESSION['inProgress']) {
   <meta name="MobileOptimized" content="320">
   <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-  <title><?php echo $quiz_title; ?> | Certification System</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="./favicon.ico/site.webmanifest">
+  <title><?php echo $quiz_title; ?> | Online Evaluation System | PrismCode Info Solutions Pvt Ltd</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
   <script src="./assets/js/require.min.js"></script>
