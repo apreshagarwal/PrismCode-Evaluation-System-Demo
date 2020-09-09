@@ -115,7 +115,7 @@ $is_active = $quiz_details['is_active'];
                 </div>
             </div>
             <?php
-            if (isset($_POST['submit']) && isset($_POST['exam_name']) && isset($_POST['difficulty_level']) && isset($_POST['description']) && isset($_POST['number_of_questions']) && isset($_POST['is_active'])) {
+            if (isset($_POST['submit']) && isset($_POST['exam_name']) && isset($_POST['difficulty_level']) && isset($_POST['description']) && isset($_POST['number_of_questions']) && isset($_POST['is_active']) && ($quiz_id != 1)) {  // ID 1 refers to the PHP Demo Quiz
                 $exam_name = $_POST['exam_name'];
                 $difficulty_level = $_POST['difficulty_level'];
                 $description = $_POST['description'];

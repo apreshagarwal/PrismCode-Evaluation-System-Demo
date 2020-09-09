@@ -128,7 +128,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 </div>
             </div>
             <?php
-            if (isset($_POST['submit']) && isset($_POST['questions']) && isset($_POST['option_1']) && isset($_POST['option_2']) && isset($_POST['option_3']) && isset($_POST['option_4']) && isset($_POST['answers']) && isset($_POST['explanations'])) {
+            if (isset($_POST['submit']) && isset($_POST['questions']) && isset($_POST['option_1']) && isset($_POST['option_2']) && isset($_POST['option_3']) && isset($_POST['option_4']) && isset($_POST['answers']) && isset($_POST['explanations']) && ($quiz_id != 1)) {    // ID 1 refers to the PHP Demo Quiz
                 $conn->autocommit(FALSE);
                 $sql = "DELETE FROM `question_bank` WHERE `quiz_id` = '$quiz_id';";
                 $conn->query($sql);
@@ -191,7 +191,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                                         <h3 class="card-title"><?php echo (!$is_new) ? "Edit" : "Add"; ?> Questions</h3>
                                     </div>
                                     <div class="card-body">
-                                        <form id="add_questinnaire_form" action="#" method="post">
+                                        <form onsubmit="return false;" id="add_questinnaire_form" action="#" method="post">
                                             <?php
                                             for ($i = 0; $i < $quiz_details['number_of_questions']; $i++) {
                                             ?>
