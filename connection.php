@@ -1,7 +1,12 @@
 <?php
 require_once('vendor/autoload.php');
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+
+use Dotenv\Dotenv;
+
+if (file_exists(__DIR__ . '/.env')) {
+    $dotenv = Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
 define('GOOGLE_RECAPTCHA_PUB', $_ENV['GOOGLE_RECAPTCHA_PUBLIC_KEY'], true);
 define('GOOGLE_RECAPTCHA_SEC', $_ENV['GOOGLE_RECAPTCHA_PRIVATE_KEY'], true);
 define('DB_HOST', $_ENV['DATABASE_HOST'], true);
